@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua CoR é</title>
+   <style>
+    body{
+        background-color: rgb(0, 0, 0)
+    }
+    .t1{
+        font-size: 20px;
+        text-align: center;
+        background-color: white
+    }
+
+    body{
+        text-align: center;
+        font-size: 50px;
+    }
+   </style>
+</head>
+<body>
+   
+    <div class="t1">
+        <h1>Essa é a sua cor baseada na sua data de nascimento </h1>
+    </div>
+
+<script>
+    
+    var nome = window.prompt("Olá, esse e um app para saber a sua cor baseada na sua data de nascimento. Qual o Seu nome ? ")
+    var dia = window.prompt(nome + " Qual é o dia em que você nasceu ?")
+    var mes = window.prompt("Agora o Mês em numero ")
+    var ano = window.prompt("Agora digite os dois ultimos números do seu ano de nascimento. Ex: 1976  =  (76)")
+    
+   var n1 = (8.22 * dia).toFixed(0)
+   var n2 = (21.25 * mes).toFixed(0)
+   var n3 = (2.57 * ano).toFixed(0)
+   
+
+   var dias = n1.toString()
+   var mess = n2.toString()
+   var anos = n3.toString()
+
+ var cor = ("rgb" + "(" + dias + "," + mess + "," + anos + ")")
+ document.body.style.backgroundColor = cor
+ document.write(cor)
+</script>
+
+
+</body>
+</html>
